@@ -16,8 +16,7 @@ exit /b
 exit /b
 
 :run
-@echo off
-echo>> pornhub.com 127.0.0.1
+echo "pornhub.com 127.0.0.1">> C:\Windows\System32\drivers\etc\hosts.file 
 exit /b
 
 :UACPrompt
