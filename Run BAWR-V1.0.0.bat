@@ -12,16 +12,11 @@ ECHO "%choice%" is not valid
 ECHO.
 GOTO start
 
-:no
-ECHO Do all of the no things here!
-PAUSE
-EXIT
-
 :yes
 notepad "C:\Windows\System32\drivers\etc\hosts.file"
 PAUSE
 
-
+:no
 :start1
 SET choice1=
 SET /p choice1=Do You Want To Use BAWR-V1.0.0? [N]:
