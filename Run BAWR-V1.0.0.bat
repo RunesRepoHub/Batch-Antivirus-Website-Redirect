@@ -19,7 +19,7 @@ PAUSE
 :no
 :start1
 SET choice1=
-SET /p choice1=Do You Want To Use BAWR-V1.0.0? [N]:
+SET /p choice1=Do You Want To Use XXXXXXXX? [N]:
 IF NOT '%choice1%'=='' SET choice=%choice:~0,1%
 IF '%choice1%'=='Y' GOTO yes1
 IF '%choice1%'=='y' GOTO yes1
