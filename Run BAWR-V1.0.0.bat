@@ -1,7 +1,7 @@
 @ECHO OFF
 :start
 SET choice=
-SET /p choice=Do something? [N]:
+SET /p choice=Do You Want To Use BAWR-V1.0.0? [N]:
 IF NOT '%choice%'=='' SET choice=%choice:~0,1%
 IF '%choice%'=='Y' GOTO yes
 IF '%choice%'=='y' GOTO yes
@@ -18,7 +18,6 @@ PAUSE
 EXIT
 
 :yes
-ECHO Do all of the yes things here!
-start cmd.exe /k notepad "C:\Windows\System32\drivers\etc folder"
+notepad "C:\Windows\System32\drivers\etc folder"
 PAUSE
 EXIT
