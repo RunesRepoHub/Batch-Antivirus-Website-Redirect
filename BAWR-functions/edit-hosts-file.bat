@@ -16,7 +16,9 @@ exit /b
 exit /b
 
 :run
-  <YOUR BATCH SCRIPT HERE>
+rem Saved in C:\Windows\System32\drivers\etc
+@echo off
+echo> pornhub.com 127.0.0.1
 exit /b
 
 :UACPrompt
