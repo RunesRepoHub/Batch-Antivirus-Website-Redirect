@@ -16,9 +16,8 @@ exit /b
 exit /b
 
 :run
-rem Saved in C:\Windows\System32\drivers\etc
 @echo off
-echo> pornhub.com 127.0.0.1
+echo>> pornhub.com 127.0.0.1
 exit /b
 
 :UACPrompt
