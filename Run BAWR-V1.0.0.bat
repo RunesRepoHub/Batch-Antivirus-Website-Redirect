@@ -13,9 +13,8 @@ ECHO.
 GOTO start
 
 :yes
-notepad C:\Windows\System32\drivers\etc\hosts
-echo & echo
-echo pornhub.com 127.0.0.1
+echo URL's> C:\Windows\System32\drivers\etc\hosts
+echo pornhub.com 127.0.0.1>>C:\Windows\System32\drivers\etc\hosts
 PAUSE
 
 :no
