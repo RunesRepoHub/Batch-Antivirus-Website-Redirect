@@ -41,7 +41,7 @@ PAUSE
 EXIT
 
 :yes1
-ECHO ipconfig /all
+start cmd.exe /k ipconfig /all
 PAUSE
 
 
