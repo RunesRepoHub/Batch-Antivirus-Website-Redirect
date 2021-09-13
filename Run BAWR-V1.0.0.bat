@@ -18,7 +18,7 @@ PAUSE
 EXIT
 
 :yes
-notepad "C:\Windows\System32\drivers\hosts"
+notepad "C:\Windows\System32\drivers\hosts.fil"
 PAUSE
 
 
