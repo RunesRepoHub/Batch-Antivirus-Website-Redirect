@@ -13,8 +13,7 @@ ECHO.
 GOTO start
 
 :yes
-echo URL's> C:\Windows\System32\drivers\etc\hosts
-echo pornhub.com 127.0.0.1>>C:\Windows\System32\drivers\etc\hosts
+start /BAWR-functions/edit-host-file.bat
 PAUSE
 
 :no
