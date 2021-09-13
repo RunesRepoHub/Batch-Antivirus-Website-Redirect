@@ -24,8 +24,21 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 ::--------------------------------------
 
-::ENTER YOUR CODE BELOW:
+
 @echo off
+if _%1_==_payload_  goto :payload
+
+:getadmin
+    echo %~nx0: elevating self
+    set vbs=%temp%\getadmin.vbs
+    echo Set UAC = CreateObject^("Shell.Application"^)                >> "%vbs%"
+    echo UAC.ShellExecute "%~s0", "payload %~sdp0 %*", "", "runas", 1 >> "%vbs%"
+    "%temp%\getadmin.vbs"
+    del "%temp%\getadmin.vbs"
+goto :eof
+
+:payload
+
 :start
 SET choice=
 SET /p choice=Do You Want To Use BAWR-V1.0.0? [N]:
