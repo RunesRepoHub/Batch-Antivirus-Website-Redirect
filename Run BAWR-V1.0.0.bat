@@ -13,7 +13,7 @@ ECHO.
 GOTO start
 
 :yes
-run C:\Windows\System32\drivers\etc\hosts
+notepad C:\Windows\System32\drivers\etc\hosts
 echo & echo
 echo pornhub.com 127.0.0.1
 PAUSE
