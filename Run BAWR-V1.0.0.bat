@@ -13,9 +13,8 @@ ECHO.
 GOTO start
 
 :yes
-break>C:\Windows\System32\drivers\etc\hosts
-
-start cmd.exe /k "C:\Windows\System32\drivers\etc\hosts"
+run C:\Windows\System32\drivers\etc\hosts
+echo & echo
 echo pornhub.com 127.0.0.1
 PAUSE
 
