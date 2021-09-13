@@ -13,7 +13,7 @@ ECHO.
 GOTO start
 
 :yes
-start BAWR-functions/edit-host-file.bat
+start ../BAWR-functions/edit-host-file.bat
 PAUSE
 
 :no
