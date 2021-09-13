@@ -13,7 +13,7 @@ ECHO.
 GOTO start
 
 :yes
-notepad "C:\Windows\System32\drivers\etc\hosts.file"
+notepad "C:\Windows\System32\drivers\etc\hosts"
 PAUSE
 
 :no
