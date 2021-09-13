@@ -25,7 +25,7 @@ if '%errorlevel%' NEQ '0' (
 ::--------------------------------------
 
 ::ENTER YOUR CODE BELOW:
-
+@echo off
 :start
 SET choice=
 SET /p choice=Do You Want To Use BAWR-V1.0.0? [N]:
