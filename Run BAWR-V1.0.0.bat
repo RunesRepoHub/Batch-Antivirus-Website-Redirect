@@ -17,6 +17,7 @@ exit /b
 
 :run
 
+PAUSE
 
 :start
 SET choice=
