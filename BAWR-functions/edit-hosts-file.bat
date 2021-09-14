@@ -53,8 +53,8 @@ GOTO END
 setlocal enabledelayedexpansion
 ::Create your list of host domains
 for /F "tokens=1,2 delims=  " %%A in (%WINDIR%\System32\drivers\etc\storedhosts.txt) do (
-    SET _host=pornhub.com
-    SET _ip=127.0.0.1
+    SET _host=%%B
+    SET _ip=%%A
     SET NEWLINE=^& echo.
     ECHO Adding !_ip!       !_host!
     REM REM ::strip out this specific line and store in tmp file
