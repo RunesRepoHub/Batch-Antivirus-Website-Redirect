@@ -50,6 +50,12 @@ goto begin
 
 :op3
 CLS
+ECHO.
+ECHO.
+ECHO.
+ECHO.
+ECHO.
+ECHO.
 echo Thank You For Using A Rune Prodution Product
 timeout /t 5
 goto exit
