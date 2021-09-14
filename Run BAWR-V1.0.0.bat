@@ -1,5 +1,4 @@
 @ECHO OFF
-BAWR Version 1.0.0
 
 ECHO 1.Update-Host-Files
 ECHO 2.Shutdown
@@ -17,7 +16,7 @@ IF ERRORLEVEL 3 GOTO CloseAllWindows
 IF ERRORLEVEL 2 GOTO Shutdown
 IF ERRORLEVEL 1 GOTO Update-Host-Files
 
-:Restart
+:Update-Host-Files
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-host-file.bat"
 call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
 PAUSE
