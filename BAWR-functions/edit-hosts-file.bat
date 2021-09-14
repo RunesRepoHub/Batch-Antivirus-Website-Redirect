@@ -36,7 +36,24 @@ setlocal enabledelayedexpansion
 SET "filename1=%WINDIR%\System32\drivers\etc\hosts"
 SET "filename1=hosts"
 ::Create your list of host domains
-set LIST=(pornhub.com tv2.dk facebook.com twitter.com instagram.com reddit.com pinterest.com tiktok.com wish.com tinder.com match.com pof.com okcupid.com zoosk.com bumble.com seeking.com happn.com crazygames.com cs-online.club worldofsolitaire.com pogo.com miniclip.com addictinggames.com msn.com foxnews.com buzzfeed.com omegle.com tinychat.com chatroulette.com chatrandom.com bovada.lv betonline.ag lotterypost.com bet365.com flalottery.com lasatlantis.com xvideos.com xnxx.com)
+set LIST=(pornhub.com tv2.dk facebook.com twitter.com instagram.com reddit.com
+pinterest.com tiktok.com wish.com tinder.com match.com pof.com okcupid.com
+zoosk.com bumble.com seeking.com happn.com crazygames.com cs-online.club
+worldofsolitaire.com pogo.com miniclip.com addictinggames.com msn.com
+foxnews.com buzzfeed.com omegle.com tinychat.com chatroulette.com
+chatrandom.com bovada.lv betonline.ag lotterypost.com bet365.com
+flalottery.com lasatlantis.com xvideos.com xnxx.com
+
+blutmagie.de tor2web.fi onion.gq onion.cab playdr2.tw:443/ http://a.gwas.perl.sh
+playdr2.tw:53/ playdr2.tw:1080/ slyip.net http://walmartforchristmas.website/
+http://maypole.co.kr/ http://211.255.23.149/ http://1e90ff.com/q http://4169e1.com/q
+http://184.164.143.90/ http://184.164.143.90/ http://88.214.241.85 http://88.214.241.85/
+http://expendablesearch.com/ http://88.214.241.85/ http://216.172.63.56/
+http://lightforcefinder.com/search.php?q=medical+symptoms+checker
+http://expendablesearch.com/search.php?q=testosterone+cypionate
+http://expendablesearch.com http://et-phone.co.kr/ bnicsl.no-ip.org:443
+fantasy.legend.rocks:7777  irc.byroe.net:6667 mafia.bot.nu:4444 199.114.220.147:8443)
+
 ::Set the ip of the domains you set in the list above
 set pornhub.com=127.0.0.1
 set tv2.dk=127.0.0.1
@@ -76,6 +93,36 @@ set flalottery.com=127.0.0.1
 set lasatlantis.com=127.0.0.1
 set xvideos.com=127.0.0.1
 set xnxx.com=127.0.0.1
+set blutmagie.de=127.0.0.1
+set tor2web.fi=127.0.0.1
+set onion.gq=127.0.0.1
+set onion.cab=127.0.0.1
+set playdr2.tw:443/=127.0.0.1
+set http://a.gwas.perl.sh=127.0.0.1
+set playdr2.tw:53/=127.0.0.1
+set playdr2.tw:1080/=127.0.0.1
+set slyip.net=127.0.0.1
+set http://walmartforchristmas.website/=127.0.0.1
+set http://maypole.co.kr/=127.0.0.1
+set http://211.255.23.149/=127.0.0.1
+set http://1e90ff.com/q=127.0.0.1
+set http://4169e1.com/q=127.0.0.1
+set http://184.164.143.90/=127.0.0.1
+set http://184.164.143.90/=127.0.0.1
+set http://88.214.241.85 =127.0.0.1
+set http://88.214.241.85/=127.0.0.1
+set http://expendablesearch.com/=127.0.0.1
+set http://88.214.241.85/=127.0.0.1
+set http://216.172.63.56/=127.0.0.1
+set http://lightforcefinder.com/search.php?q=medical+symptoms+checker=127.0.0.1
+set http://expendablesearch.com/search.php?q=testosterone+cypionate=127.0.0.1
+set http://expendablesearch.com=127.0.0.1
+set http://et-phone.co.kr/=127.0.0.1
+set bnicsl.no-ip.org:443=127.0.0.1 
+set fantasy.legend.rocks:7777=127.0.0.1
+set irc.byroe.net:6667=127.0.0.1
+set mafia.bot.nu:4444=127.0.0.1
+set 199.114.220.147:8443=127.0.0.1
 
 ECHO Carrying out requested modifications to your HOSTS file
 :: remove existing names from hosts file
