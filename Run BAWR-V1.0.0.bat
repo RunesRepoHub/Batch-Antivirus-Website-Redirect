@@ -5,7 +5,7 @@ echo Select a task:
 echo =============
 echo -
 echo 1) Update Host Files
-echo 2) Option 2
+echo 2) Reset Host Files
 echo 3) Option 3
 echo 4) Option 4
 echo -
@@ -26,7 +26,9 @@ PAUSE
 goto begin
 
 :op2
-echo you picked option 2
+call "c:\Users\%Username%\Desktop\BAWR-functions\reset-host-file.bat"
+call "c:\Windows\System32\drivers\etc\reset-host-file.bat"
+PAUSE
 goto begin
 
 :op3
