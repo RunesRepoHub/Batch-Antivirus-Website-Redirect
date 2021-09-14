@@ -1,5 +1,5 @@
 echo off
-prompt $T $B $P$G && title Rune Prodution && color 2
+prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.0.0 && color 2
 :begin
 CLS
 echo Select a task:
@@ -22,7 +22,7 @@ goto begin
 
 :op1
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-host-file.bat"
-CLS
+ECHO.
 echo Please Wait...
 timeout /t 3
 call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
@@ -33,7 +33,7 @@ goto begin
 
 :op2
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-reset-hosts-file.bat"
-CLS
+ECHO.
 echo Please Wait...
 timeout /t 3
 call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"

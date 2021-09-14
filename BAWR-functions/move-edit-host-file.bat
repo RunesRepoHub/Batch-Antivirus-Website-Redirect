@@ -1,5 +1,5 @@
 @echo off
-TITLE Modifying your HOSTS file
+prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.0.0 && color 2
 ECHO.
 
 :: BatchGotAdmin
