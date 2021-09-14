@@ -34,7 +34,7 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 :ACCEPTED
 setlocal enabledelayedexpansion
 SET "filename1=%WINDIR%\System32\drivers\etc\hosts"
-SET "filename1=hosts.txt"
+SET "filename1=hosts.fil"
 ::Create your list of host domains
 set LIST=(pornhub.com tv2.dk facebook.com twitter.com)
 ::Set the ip of the domains you set in the list above
