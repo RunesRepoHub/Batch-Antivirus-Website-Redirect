@@ -27,8 +27,6 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-PAUSE
-
 :LOOP
 SET Choice=
 SET /P Choice="Do you want to modify HOSTS file ? (Y/N)"
