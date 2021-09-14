@@ -1,5 +1,6 @@
 echo off
 :begin
+CLS
 echo Select a task:
 echo =============
 echo -
