@@ -57,3 +57,5 @@ rem    set  _value=!%%G!
 ::overwrite host file
 move tmp.txt %filename1% >nul
 )
+
+ipconfig /flushdns
