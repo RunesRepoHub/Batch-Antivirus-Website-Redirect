@@ -54,13 +54,14 @@ for /F "tokens=1,2 delims=  " %%A in (%WINDIR%\System32\drivers\etc\storedhosts.
     SET _host=%%B
     SET _ip=%%A
     SET NEWLINE=^& echo.
-    ECHO Adding !_ip!       !_host!
+    ECHO Adding !_ip1!       !_host1!
     SET NEWLINE=^& echo.
-    ECHO Adding !_ip!       !_host!
+    ECHO Adding !_ip2!       !_host2!
     REM REM ::strip out this specific line and store in tmp file
     type %WINDIR%\System32\drivers\etc\hosts | findstr /v !_host! > tmp.txt
     REM REM ::re-add the line to it
-    ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
+    ECHO %NEWLINE%^!_ip1!        !_host1! >> tmp.txt
+    ECHO %NEWLINE%^!_ip2!        !_host2! >> tmp.txt
     REM ::overwrite host file
     copy /b/v/y tmp.txt %WINDIR%\System32\drivers\etc\hosts
     del tmp.txt
