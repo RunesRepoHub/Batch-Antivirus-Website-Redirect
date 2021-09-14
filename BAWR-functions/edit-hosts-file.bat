@@ -1,8 +1,6 @@
 @echo off
 TITLE Modifying your HOSTS file
-COLOR F0
 ECHO.
-
 
 :: BatchGotAdmin
 :-------------------------------------
@@ -44,7 +42,7 @@ GOTO Loop
 
 
 :REJECTED
-ECHO Your HOSTS file was left unchanged>>%systemroot%\Temp\hostFileUpdate.log
+ECHO Your HOSTS file was left unchanged.
 ECHO Finished.
 GOTO END
 
@@ -52,35 +50,27 @@ GOTO END
 :ACCEPTED
 setlocal enabledelayedexpansion
 ::Create your list of host domains
-set LIST=(diqc.oca wiki.oca)
-::Set the ip of the domains you set in the list above
-set diqc.oca=192.168.111.6
-set wiki.oca=192.168.111.4
-:: deletes the parentheses from LIST
-set _list=%LIST:~1,-1%
-::ECHO %WINDIR%\System32\drivers\etc\hosts > tmp.txt
-for  %%G in (%_list%) do (
-    set  _name=%%G
-    set  _value=!%%G!
+for /F "tokens=1,2 delims=  " %%A in (%WINDIR%\System32\drivers\etc\storedhosts.txt) do (
+    SET _host=%%B
+    SET _ip=%%A
     SET NEWLINE=^& echo.
-    ECHO Carrying out requested modifications to your HOSTS file
-    ::strip out this specific line and store in tmp file
-    type %WINDIR%\System32\drivers\etc\hosts | findstr /v !_name! > tmp.txt
-    ::re-add the line to it
-    ECHO %NEWLINE%^!_value! !_name!>>tmp.txt
-    ::overwrite host file
+    ECHO Adding !_ip!       !_host!
+    REM REM ::strip out this specific line and store in tmp file
+    type %WINDIR%\System32\drivers\etc\hosts | findstr /v !_host! > tmp.txt
+    REM REM ::re-add the line to it
+    ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
+    REM ::overwrite host file
     copy /b/v/y tmp.txt %WINDIR%\System32\drivers\etc\hosts
     del tmp.txt
 )
+
 ipconfig /flushdns
 ECHO.
 ECHO.
 ECHO Finished, you may close this window now.
-ECHO You should now open Chrome and go to "chrome://net-internals/#dns" (without quotes)
-ECHO     then click the "clear host cache" button
 GOTO END
 
 :END
 ECHO.
-ping -n 11 192.0.2.2 > nul
+PAUSE
 EXIT
