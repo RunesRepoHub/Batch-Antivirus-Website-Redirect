@@ -29,7 +29,7 @@ call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3
-call "c:\Windows\System32\drivers\etc\delete-edit-hosts-file.bat"
+call "c:\Users\%Username%\Desktop\BAWR-functions\delete-edit-hosts-file.bat"
 ECHO.
 PAUSE
 goto begin
@@ -43,7 +43,7 @@ call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3
-call "c:\Windows\System32\drivers\etc\delete-reset-hosts-file.bat"
+call "c:\Users\%Username%\Desktop\BAWR-functions\delete-reset-hosts-file.bat"
 ECHO.
 PAUSE
 goto begin
