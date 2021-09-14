@@ -36,12 +36,12 @@ setlocal enabledelayedexpansion
 SET "filename1=%WINDIR%\System32\drivers\etc\hosts"
 SET "filename1=hosts.txt"
 ::Create your list of host domains
-set LIST=(osu.ppy.sh a.ppy.sh c.ppy.sh c1.ppy.sh)
+set LIST=(pornhub.com tv2.dk facebook.com twitter.com)
 ::Set the ip of the domains you set in the list above
-set osu.ppy.sh=178.62.57.37
-set a.ppy.sh=178.62.57.37
-set c.ppy.sh=178.62.57.37
-set c1.ppy.sh=178.62.57.37
+set pornhub.com=127.0.0.1
+set tv2.dk=127.0.0.1
+set facebook.com=127.0.0.1
+set twitter.com=127.0.0.1
 
 ECHO Carrying out requested modifications to your HOSTS file
 :: remove existing names from hosts file
