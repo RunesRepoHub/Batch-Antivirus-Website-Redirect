@@ -56,7 +56,7 @@ for /F "tokens=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 delims=  " %%A in (%WIN
     SET NEWLINE=^& echo.
     ECHO Adding !_ip!       !_host!
     REM REM ::strip out this specific line and store in tmp file
-    type %WINDIR%\System32\drivers\etc\hosts | findstr /v !_host! > tmp.txt
+    type %WINDIR%\System32\drivers\etc\hosts | findstr /v !_hosts! > tmp.txt
     REM REM ::re-add the line to it
     ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
     REM ::overwrite host file
