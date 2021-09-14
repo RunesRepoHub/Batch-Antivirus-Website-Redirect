@@ -33,7 +33,7 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 
 :ACCEPTED
 setlocal enabledelayedexpansion
-SET "filename1=%WINDIR%\System32\drivers\etc\hosts"
+SET "filename1=c:\Windows\System32\drivers\etc\hosts"
 SET "filename1=hosts"
 ::Create your list of host domains
 set LIST=(pornhub.com tv2.dk facebook.com twitter.com instagram.com reddit.com
@@ -62,7 +62,7 @@ www.felippealfredo.com elfin-adaptive-recorder.glitch.me www.designmycakes.com
 colegiolecole.edu.mx boltrucks.us centraslcourierllc.com geekvb.in janglo.net
 bookedandboarding.com www.azhomes.com besthomeworkhelp.org kongrespdgi.com
 sepehrparmis.com kerfoo.com itmagazin.info designmycakes.com www.designmycakes.com
-petbijoux.com.br www.facepooc.com cloud9ine.ru promcuscotravel.com is.facviews.com 
+petbijoux.com.br www.facepooc.com cloud9ine.ru promcuscotravel.com is.facviews.com
 www.voolenstudios.com wpcccricket.co.za gobbojr.com.br dejavumedspaaz.com)
 
 ::Set the ip of the domains you set in the list above
