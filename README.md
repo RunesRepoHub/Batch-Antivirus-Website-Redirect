@@ -6,8 +6,7 @@ This has been made for blocking company PC from accessing pre-defined URL's.
 At the moment this Version 1.0.0 blocks around 120 url's.
 This is the list as of now.
 
-* pornhub.com
-* tv2.dk
+* pornhub.com * tv2.dk
 * facebook.com
 * twitter.com
 * instagram.com
