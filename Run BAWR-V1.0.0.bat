@@ -22,8 +22,9 @@ IF ERRORLEVEL 1 GOTO Update-Host-Files
 GOTO End
 
 :Restart
-call "c:\Users\chris\Desktop\BAWR-functions\move-edit-host-file.bat"
+call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-host-file.bat"
 call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
+PAUSE
 GOTO End
 
 :Shutdown

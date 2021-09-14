@@ -28,4 +28,4 @@ if '%errorlevel%' NEQ '0' (
 
 :--------------------------------------
 
-move "c:\Users\chris\Desktop\BAWR-functions\edit-hosts-file.bat" "c:\Windows\System32\drivers\etc"
+move "c:\Users\%Username%\Desktop\BAWR-functions\edit-hosts-file.bat" "c:\Windows\System32\drivers\etc"
