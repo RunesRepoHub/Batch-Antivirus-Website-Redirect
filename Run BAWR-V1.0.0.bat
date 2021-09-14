@@ -26,8 +26,8 @@ PAUSE
 goto begin
 
 :op2
-call "c:\Users\%Username%\Desktop\BAWR-functions\reset-host-file.bat"
-call "c:\Windows\System32\drivers\etc\reset-host-file.bat"
+call "c:\Users\%Username%\Desktop\BAWR-functions\reset-hosts-file.bat"
+call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
 PAUSE
 goto begin
 
