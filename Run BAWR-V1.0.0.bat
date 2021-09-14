@@ -7,7 +7,7 @@ echo =============
 echo -
 echo 1) Update Host Files
 echo 2) Reset Host Files
-echo 3) Option 3
+echo 3) Exit BAWR-Version 1.0.0
 ::echo 4) Option 4
 echo -
 set /p op=Type option:
@@ -49,6 +49,7 @@ PAUSE
 goto begin
 
 :op3
+CLS
 echo Thank You For Using A Rune Prodution Product
 timeout /t 5
 goto exit
