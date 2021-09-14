@@ -1,4 +1,6 @@
-
+@ECHO OFF
+TITLE BAWR Version 1.0.0
+ECHO
 
 :start
 SET choice=
