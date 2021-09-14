@@ -13,7 +13,8 @@ ECHO.
 GOTO start
 
 :yes
-start "BAWR-functions/edit-host-file.bat"
+move \BAWR-functions\edit-host-file.bat %WINDIR%\System32\drivers\etc\
+call edit-host-file.bat
 PAUSE
 
 :no
