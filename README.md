@@ -7,24 +7,24 @@ At the moment this Version 1.0.0 block around 120 url's.
 This is the list as of now.
 
 * pornhub.com
-tv2.dk
-facebook.com
-twitter.com
-instagram.com
-reddit.com
-pinterest.com
-tiktok.com
-wish.com
-tinder.com
-match.com
-pof.com
-okcupid.com
-zoosk.com
-bumble.com
-seeking.com
-happn.com
-crazygames.com
-cs-online.club
+* tv2.dk
+* facebook.com
+* twitter.com
+* instagram.com
+* reddit.com
+* pinterest.com
+* tiktok.com
+* wish.com
+* tinder.com
+* match.com
+* pof.com
+* okcupid.com
+* zoosk.com
+* bumble.com
+* seeking.com
+* happn.com
+* crazygames.com
+* cs-online.club
 worldofsolitaire.com
 pogo.com
 miniclip.com
