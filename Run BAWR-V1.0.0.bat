@@ -1,56 +1,46 @@
 @ECHO OFF
-TITLE BAWR Version 1.0.0
-ECHO
+BAWR Version 1.0.0
 
-:start
-SET choice=
-SET /p choice=Do You Want To Use BAWR-V1.0.0? [N]:
-IF NOT '%choice%'=='' SET choice=%choice:~0,1%
-IF '%choice%'=='Y' GOTO yes
-IF '%choice%'=='y' GOTO yes
-IF '%choice%'=='N' GOTO no
-IF '%choice%'=='n' GOTO no
-IF '%choice%'=='' GOTO no
-ECHO "%choice%" is not valid
+ECHO 1.Update-Host-Files
+ECHO 2.Shutdown
+ECHO 3.Close all Windows
+ECHO 4.Log off
+ECHO 5.Switch User
 ECHO.
-GOTO start
+
+CHOICE /C 12345 /M "Enter your choice:"
+
+:: Note - list ERRORLEVELS in decreasing order
+IF ERRORLEVEL 5 GOTO SwitchUser
+IF ERRORLEVEL 4 GOTO Logoff
+IF ERRORLEVEL 3 GOTO CloseAllWindows
+IF ERRORLEVEL 2 GOTO Shutdown
+IF ERRORLEVEL 1 GOTO Update-Host-Files
 
 :yes
+
+GOTO End
+
+:Restart
 call "c:\Users\chris\Desktop\BAWR-functions\move-edit-host-file.bat"
 call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
-PAUSE
+GOTO End
 
-:no
-:start1
-SET choice1=
-SET /p choice1=Do You Want To Use XXXXXXXX? [N]:
-IF NOT '%choice1%'=='' SET choice=%choice:~0,1%
-IF '%choice1%'=='Y' GOTO yes1
-IF '%choice1%'=='y' GOTO yes1
-IF '%choice1%'=='N' GOTO no1
-IF '%choice1%'=='n' GOTO no1
-IF '%choice1%'=='' GOTO no1
-ECHO "%choice1%" is not valid
-ECHO.
-GOTO start1
+:Shutdown
+ECHO Shutdown (put your shutdown code here)
+GOTO End
 
-:no1
-ECHO Do all of the no things here!
-PAUSE
-EXIT
+:CloseAllWindows
+ECHO Close All Windows (put your close all windows code here)
+GOTO End
 
-:yes1
-start cmd.exe /k ipconfig /all
-PAUSE
+:Logoff
+ECHO Logoff (put your log off code here)
+GOTO End
+
+:SwitchUser
+ECHO Switch User (put your switch user code here)
+GOTO End
 
 
-
-
-
-
-
-
-
-
-
-EXIT
+:End
