@@ -25,52 +25,35 @@ if '%errorlevel%' NEQ '0' (
 :gotAdmin
     pushd "%CD%"
     CD /D "%~dp0"
+
 :--------------------------------------
 
-:LOOP
-SET Choice=
-SET /P Choice="Do you want to modify HOSTS file ? (Y/N)"
 
-IF NOT '%Choice%'=='' SET Choice=%Choice:~0,1%
-
-ECHO.
-IF /I '%Choice%'=='Y' GOTO ACCEPTED
-IF /I '%Choice%'=='N' GOTO REJECTED
-ECHO Please type Y (for Yes) or N (for No) to proceed!
-ECHO.
-GOTO Loop
-
-
-:REJECTED
-ECHO Your HOSTS file was left unchanged.
-ECHO Finished.
-GOTO END
-
+SETLOCAL ENABLEDELAYEDEXPANSION
 
 :ACCEPTED
 setlocal enabledelayedexpansion
+SET "filename1=%WINDIR%\System32\drivers\etc\hosts"
+SET "filename1=hosts.txt"
 ::Create your list of host domains
-for /F "tokens=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 delims=  " %%A in (%WINDIR%\System32\drivers\etc\storedhosts.txt) do (
-    SET _host=%%B
-    SET _ip=%%A
-    SET NEWLINE=^& echo.
-    ECHO Adding !_ip!       !_host!
-    REM REM ::strip out this specific line and store in tmp file
-    type %WINDIR%\System32\drivers\etc\hosts | findstr /v !_hosts! > tmp.txt
-    REM REM ::re-add the line to it
-    ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
-    REM ::overwrite host file
-    copy /b/v/y tmp.txt %WINDIR%\System32\drivers\etc\hosts
-    del tmp.txt
+set LIST=(osu.ppy.sh a.ppy.sh c.ppy.sh c1.ppy.sh)
+::Set the ip of the domains you set in the list above
+set osu.ppy.sh=178.62.57.37
+set a.ppy.sh=178.62.57.37
+set c.ppy.sh=178.62.57.37
+set c1.ppy.sh=178.62.57.37
+
+ECHO Carrying out requested modifications to your HOSTS file
+:: remove existing names from hosts file
+
+findstr /v /e "%LIST:~1,-1%" "%filename1%"> tmp.txt
+
+:: Add new list
+for  %%G in %list% do (
+rem    set  _name=%%G
+rem    set  _value=!%%G!
+    ECHO !%%G! %%G>>tmp.txt
 )
-
-ipconfig /flushdns
-ECHO.
-ECHO.
-ECHO Finished, you may close this window now.
-GOTO END
-
-:END
-ECHO.
-PAUSE
-EXIT
+::overwrite host file
+move tmp.txt %filename1% >nul
+)
