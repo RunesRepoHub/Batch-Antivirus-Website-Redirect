@@ -21,12 +21,14 @@ goto begin
 
 :op1
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-host-file.bat"
+timeout /t 3
 call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
 PAUSE
 goto begin
 
 :op2
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-reset-hosts-file.bat"
+timeout /t 3
 call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
 PAUSE
 goto begin
