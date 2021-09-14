@@ -3,7 +3,7 @@ This is a batch file/files that modifies the localhost file on a Windows PC.
 
 This has been made for blocking company PC from accessing pre-defined URL's.
 
-At the moment this Version 1.0.0 block around 120 url's.
+At the moment this Version 1.0.0 blocks around 120 url's.
 This is the list as of now.
 
 * pornhub.com
