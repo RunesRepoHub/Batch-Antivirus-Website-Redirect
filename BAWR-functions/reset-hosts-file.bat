@@ -38,7 +38,7 @@ SET "filename1=hosts"
 ::Create your list of host domains
 set LIST=(pornhub.com tv2.dk facebook.com twitter.com instagram.com reddit.com pinterest.com tiktok.com wish.com tinder.com match.com pof.com okcupid.com zoosk.com bumble.com seeking.com happn.com crazygames.com cs-online.club worldofsolitaire.com pogo.com miniclip.com addictinggames.com msn.com foxnews.com buzzfeed.com omegle.com tinychat.com chatroulette.com chatrandom.com bovada.lv betonline.ag lotterypost.com bet365.com flalottery.com lasatlantis.com xvideos.com xnxx.com)
 ::Set the ip of the domains you set in the list above
-set pornhub.com=127.0.0.1
+set bing.com=127.0.0.1
 
 
 ECHO Carrying out requested modifications to your HOSTS file
