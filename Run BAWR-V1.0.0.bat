@@ -8,13 +8,13 @@ echo -
 echo 1) Update Host Files
 echo 2) Reset Host Files
 echo 3) Option 3
-echo 4) Option 4
+::echo 4) Option 4
 echo -
 set /p op=Type option:
 if "%op%"=="1" goto op1
 if "%op%"=="2" goto op2
 if "%op%"=="3" goto op3
-if "%op%"=="4" goto op4
+::if "%op%"=="4" goto op4
 
 echo Please Pick an option:
 goto begin
@@ -49,8 +49,9 @@ PAUSE
 goto begin
 
 :op3
-echo you picked option 3
-goto begin
+echo Thank You For Using A Rune Prodution Product
+timeout /t 5
+goto exit
 
 :op4
 echo you picked option 4
