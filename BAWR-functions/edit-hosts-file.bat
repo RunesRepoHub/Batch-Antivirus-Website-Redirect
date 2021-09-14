@@ -50,26 +50,14 @@ GOTO END
 :ACCEPTED
 setlocal enabledelayedexpansion
 ::Create your list of host domains
-for /F "tokens=1,2 delims=  " %%A in (%WINDIR%\System32\drivers\etc\storedhosts.txt) do (
+for /F "tokens=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 delims=  " %%A in (%WINDIR%\System32\drivers\etc\storedhosts.txt) do (
     SET _host=%%B
     SET _ip=%%A
-    SET NEWLINE=^& echo.
-    ECHO Adding !_ip!       !_host!
-    SET NEWLINE=^& echo.
-    ECHO Adding !_ip!       !_host!
-    SET NEWLINE=^& echo.
-    ECHO Adding !_ip!       !_host!
-    SET NEWLINE=^& echo.
-    ECHO Adding !_ip!       !_host!
     SET NEWLINE=^& echo.
     ECHO Adding !_ip!       !_host!
     REM REM ::strip out this specific line and store in tmp file
     type %WINDIR%\System32\drivers\etc\hosts | findstr /v !_host! > tmp.txt
     REM REM ::re-add the line to it
-    ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
-    ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
-    ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
-    ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
     ECHO %NEWLINE%^!_ip!        !_host! >> tmp.txt
     REM ::overwrite host file
     copy /b/v/y tmp.txt %WINDIR%\System32\drivers\etc\hosts
