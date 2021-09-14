@@ -36,34 +36,7 @@ setlocal enabledelayedexpansion
 SET "filename1=c:\Windows\System32\drivers\etc\hosts"
 SET "filename1=hosts"
 ::Create your list of host domains
-set LIST=(pornhub.com tv2.dk facebook.com twitter.com instagram.com reddit.com
-pinterest.com tiktok.com wish.com tinder.com match.com pof.com okcupid.com
-zoosk.com bumble.com seeking.com happn.com crazygames.com cs-online.club
-worldofsolitaire.com pogo.com miniclip.com addictinggames.com msn.com
-foxnews.com buzzfeed.com omegle.com tinychat.com chatroulette.com
-chatrandom.com bovada.lv betonline.ag lotterypost.com bet365.com
-flalottery.com lasatlantis.com xvideos.com xnxx.com
-blutmagie.de tor2web.fi onion.gq onion.cab playdr2.tw:443/ http://a.gwas.perl.sh
-playdr2.tw:53/ playdr2.tw:1080/ slyip.net http://walmartforchristmas.website/
-http://maypole.co.kr/ http://211.255.23.149/ http://1e90ff.com/q http://4169e1.com/q
-http://184.164.143.90/ http://184.164.143.90/ http://88.214.241.85 http://88.214.241.85/
-http://expendablesearch.com/ http://88.214.241.85/ http://216.172.63.56/
-http://lightforcefinder.com/search.php?q=medical+symptoms+checker
-http://expendablesearch.com/search.php?q=testosterone+cypionate
-http://expendablesearch.com http://et-phone.co.kr/ bnicsl.no-ip.org:443
-fantasy.legend.rocks:7777  irc.byroe.net:6667 mafia.bot.nu:4444 199.114.220.147:8443
-mercetruck.com.br ngipharmacy.com www.lizsol.com diamondsgrouphr.com artoftheruse.com
-bluecoatict.co.uk lopesdedetizacao.com.br licmirtabraier.com.ar bhardwajcarriers.com
-cartomantealex.com danlaid.com.au powerful-spark-age.glitch.me www.online-et.com
-mbaudiovisual.com.br www.reservation-ouicar.com workdefender.com arvnorton.com
-habuprocess.com www.shebasecurity.com laborerpattern.com dallascarcrashlawyer.com
-mail.reservation-ouicar.com styleandharmony.com.au dev.klinikmatanusantara.com
-www.felippealfredo.com elfin-adaptive-recorder.glitch.me www.designmycakes.com
-colegiolecole.edu.mx boltrucks.us centraslcourierllc.com geekvb.in janglo.net
-bookedandboarding.com www.azhomes.com besthomeworkhelp.org kongrespdgi.com
-sepehrparmis.com kerfoo.com itmagazin.info designmycakes.com www.designmycakes.com
-petbijoux.com.br www.facepooc.com cloud9ine.ru promcuscotravel.com is.facviews.com
-www.voolenstudios.com wpcccricket.co.za gobbojr.com.br dejavumedspaaz.com)
+set LIST=(pornhub.com tv2.dk facebook.com twitter.com instagram.com reddit.com pinterest.com tiktok.com wish.com tinder.com match.com pof.com okcupid.com zoosk.com bumble.com seeking.com happn.com crazygames.com cs-online.club worldofsolitaire.com pogo.com miniclip.com addictinggames.com msn.com foxnews.com buzzfeed.com omegle.com tinychat.com chatroulette.com flalottery.com lasatlantis.com xvideos.com xnxx.com blutmagie.de tor2web.fi onion.gq onion.cab playdr2.tw:443/ http://a.gwas.perl.sh playdr2.tw:53/ playdr2.tw:1080/ slyip.net http://walmartforchristmas.website/ http://maypole.co.kr/ http://211.255.23.149/ http://1e90ff.com/q http://4169e1.com/q http://184.164.143.90/ http://184.164.143.90/ http://88.214.241.85 http://88.214.241.85/ http://expendablesearch.com/ http://88.214.241.85/ http://216.172.63.56/ http://lightforcefinder.com/search.php?q=medical+symptoms+checker http://expendablesearch.com/search.php?q=testosterone+cypionate http://expendablesearch.com http://et-phone.co.kr/ bnicsl.no-ip.org:443 chatrandom.com bovada.lv betonline.ag lotterypost.com bet365.com fantasy.legend.rocks:7777  irc.byroe.net:6667 mafia.bot.nu:4444 199.114.220.147:8443 mercetruck.com.br ngipharmacy.com www.lizsol.com diamondsgrouphr.com artoftheruse.com bluecoatict.co.uk lopesdedetizacao.com.br licmirtabraier.com.ar bhardwajcarriers.com cartomantealex.com danlaid.com.au powerful-spark-age.glitch.me www.online-et.com mbaudiovisual.com.br www.reservation-ouicar.com workdefender.com arvnorton.com habuprocess.com www.shebasecurity.com laborerpattern.com dallascarcrashlawyer.com mail.reservation-ouicar.com styleandharmony.com.au dev.klinikmatanusantara.com www.felippealfredo.com elfin-adaptive-recorder.glitch.me www.designmycakes.com colegiolecole.edu.mx boltrucks.us centraslcourierllc.com geekvb.in janglo.net bookedandboarding.com www.azhomes.com besthomeworkhelp.org kongrespdgi.com sepehrparmis.com kerfoo.com itmagazin.info designmycakes.com www.designmycakes.com petbijoux.com.br www.facepooc.com cloud9ine.ru promcuscotravel.com is.facviews.com www.voolenstudios.com wpcccricket.co.za gobbojr.com.br dejavumedspaaz.com)
 
 ::Set the ip of the domains you set in the list above
 set pornhub.com=127.0.0.1
