@@ -19,13 +19,14 @@ if "%op%"=="1" goto op1
 if "%op%"=="2" goto op2
 if "%op%"=="3" goto op3
 if "%op%"=="4" goto op4
-
+::------------------------------
 ::User input
 echo Please Pick an option:
 goto begin
-
+::------------------------------
 
 ::This section is to configured the options
+::------------------------------
 :op1
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-delete.bat"
 ECHO.
@@ -34,7 +35,9 @@ timeout /t 3 /nobreak > nul
 ECHO.
 pause
 goto begin
+::------------------------------
 
+::------------------------------
 :op2
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-reset-delete.bat"
 ECHO.
@@ -43,7 +46,9 @@ timeout /t 3 /nobreak > nul
 ECHO.
 pause
 goto begin
+::------------------------------
 
+::------------------------------
 :op4
 CLS
 echo .
@@ -70,7 +75,9 @@ echo ..
 timeout /t 1 /nobreak > nul
 echo .
 goto exit
+::------------------------------
 
+::------------------------------
 :op3
 :more
 CLS
@@ -87,18 +94,24 @@ if "%op%"=="1" goto more1
 if "%op%"=="2" goto more2
 if "%op%"=="3" goto more3
 ::if "%op%"=="4" goto more4
+::------------------------------
 
+::------------------------------
 ::User input
 echo Please Pick an option:
 goto more
+::------------------------------
 
+::------------------------------
 :more1
 call "c:\Users\%Username%\Desktop\BAWR-functions\make-godmode-folders.bat"
 ECHO.
 echo Successfully Created GodMode Folders In The BAWR-Functions Folder On Your Desktop.
 pause
 goto more
+::------------------------------
 
+::------------------------------
 :more2
 echo test opt 1
 ECHO.
@@ -107,13 +120,17 @@ timeout /t 3 /nobreak > nul
 ECHO.
 pause
 goto more
+::------------------------------
 
+::------------------------------
 :more3
+
 CLS
 goto begin
+::------------------------------
 
 goto begin
-
+::------------------------------
 
 :exit
 @exit
