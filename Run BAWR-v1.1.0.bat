@@ -7,13 +7,13 @@ prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.1.0 && color 2
 :begin
 CLS
 echo Select a task:
-echo =============
-echo -
+echo ===========================
+echo ---------------------------
 echo 1) Update Host Files
 echo 2) Reset Host Files
 echo 3) Exit BAWR-Version 1.1.0
 echo 4) More Options
-echo -
+echo ---------------------------
 set /p op=Type option:
 if "%op%"=="1" goto op1
 if "%op%"=="2" goto op2
@@ -60,13 +60,13 @@ goto exit
 :more
 CLS
 echo More Options:
-echo =============
-echo -
+echo ===========================
+echo ---------------------------
 echo 1) Test 1
 echo 2) Test 2
 echo 3) Exit BAWR-Version 1.1.0
 ::echo 4) More Options
-echo -
+echo ---------------------------
 set /p op=Type option:
 if "%op%"=="1" goto more1
 if "%op%"=="2" goto more2
@@ -78,10 +78,10 @@ echo Please Pick an option:
 goto more
 
 :more1
-echo test opt 1
+call "c:\Users\%Username%\Desktop\BAWR-functions\make-godmode-folders.bat"
 ECHO.
 echo Please Wait...
-timeout /t 3
+timeout /t 1
 ECHO.
 PAUSE
 goto more
