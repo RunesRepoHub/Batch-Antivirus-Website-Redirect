@@ -86,14 +86,16 @@ echo ===========================
 echo ---------------------------
 echo 1) Create GodMode Folders
 echo 2) Test 2
-echo 3) Exit BAWR-Version 1.1.0
-::echo 4) More Options
+echo 3) Enable Windows Admin "SuperUser"
+echo 4) Disable Windows Admin "SuperUser"
+echo 5) Exit More Options
 echo ---------------------------
 set /p op=Type option:
 if "%op%"=="1" goto more1
 if "%op%"=="2" goto more2
 if "%op%"=="3" goto more3
-::if "%op%"=="4" goto more4
+if "%op%"=="4" goto more4
+if "%op%"=="5" goto more5
 ::------------------------------
 
 ::------------------------------
@@ -124,6 +126,18 @@ goto more
 
 ::------------------------------
 :more3
+call "c:\Users\%Username%\Desktop\BAWR-functions\enable-superuser.bat
+pause
+::------------------------------
+
+::------------------------------
+:more4
+call "c:\Users\%Username%\Desktop\BAWR-functions\disable-superuser.bat
+pause
+::------------------------------
+
+::------------------------------
+:more5
 
 CLS
 goto begin
