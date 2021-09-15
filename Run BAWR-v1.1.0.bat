@@ -44,7 +44,7 @@ ECHO.
 pause
 goto begin
 
-:op3
+:op4
 CLS
 echo .
 timeout /t 1 /nobreak > nul
@@ -71,7 +71,7 @@ timeout /t 1 /nobreak > nul
 echo .
 goto exit
 
-:op4
+:op3
 :more
 CLS
 echo More Options:
