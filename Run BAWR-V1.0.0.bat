@@ -21,16 +21,10 @@ goto begin
 
 
 :op1
-call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-host-file.bat"
+call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-delete.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3
-call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
-ECHO.
-echo Please Wait...
-timeout /t 3
-call "c:\Users\%Username%\Desktop\BAWR-functions\delete-edit-hosts-file.bat"
-ECHO.
 PAUSE
 goto begin
 

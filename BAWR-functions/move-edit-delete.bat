@@ -28,32 +28,10 @@ if '%errorlevel%' NEQ '0' (
 
 :--------------------------------------
 
-
-SETLOCAL ENABLEDELAYEDEXPANSION
-
-:ACCEPTED
-setlocal enabledelayedexpansion
-SET "filename1=c:\Windows\System32\drivers\etc\\hosts"
-SET "filename1=hosts"
-::Create your list of host domains
-set LIST=(bing.com)
-::Set the ip of the domains you set in the list above
-set bing.com=127.0.0.1
-
-
-ECHO Carrying out requested modifications to your HOSTS file
-:: remove existing names from hosts file
-
-findstr /v /e "%LIST:~1,-1%" "%filename1%"> tmp.txt
-
-:: Add new list
-for  %%G in %list% do (
-rem    set  _name=%%G
-rem    set  _value=!%%G!
-    ECHO !%%G! %%G>>tmp.txt
-)
-::overwrite host file
-move tmp.txt %filename1% >nul
-)
-
-ipconfig /flushdns
+copy "c:\Users\%Username%\Desktop\BAWR-functions\edit-hosts-file.bat" "c:\Windows\System32\drivers\etc"
+ECHO.
+timeout /t 3
+call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
+ECHO.
+timeout /t 5
+del /f /q c:\Windows\System32\drivers\etc\edit-hosts-file.bat
