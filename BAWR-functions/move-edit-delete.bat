@@ -1,7 +1,7 @@
 @echo off
 
 ::This is the title of the cmd window, the color and the timestamp.
-prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.0.5 && color 2
+prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.1.0 && color 2
 ECHO.
 
 ::This is a script for giving cmd admin rights.
