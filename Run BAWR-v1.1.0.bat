@@ -32,7 +32,7 @@ ECHO.
 echo Please Wait...
 timeout /t 3
 ECHO.
-PAUSE
+pause
 goto begin
 
 :op2
@@ -41,7 +41,7 @@ ECHO.
 echo Please Wait...
 timeout /t 3
 ECHO.
-PAUSE
+pause
 goto begin
 
 :op3
@@ -83,7 +83,7 @@ ECHO.
 echo Please Wait...
 timeout /t 1
 ECHO.
-PAUSE
+pause
 goto more
 
 :more2
@@ -92,7 +92,7 @@ ECHO.
 echo Please Wait...
 timeout /t 3
 ECHO.
-PAUSE
+pause
 goto more
 
 :more3
