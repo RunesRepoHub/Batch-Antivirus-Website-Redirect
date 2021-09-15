@@ -57,46 +57,48 @@ timeout /t 5
 goto exit
 
 :op4
-:begin2
+:more
 CLS
-echo Select a task:
+echo More Options:
 echo =============
 echo -
-echo 1) Update Host Files
-echo 2) Reset Host Files
+echo 1) Test 1
+echo 2) Test 2
 echo 3) Exit BAWR-Version 1.1.0
-echo 4) More Options
+::echo 4) More Options
 echo -
 set /p op=Type option:
-if "%opt%"=="1" goto opt1
-if "%opt%"=="2" goto opt2
-if "%opt%"=="3" goto opt3
-if "%opt%"=="4" goto opt4
+if "%more%"=="1" goto more1
+if "%more%"=="2" goto more2
+if "%more%"=="3" goto more3
+::if "%more%"=="4" goto more4
 
 ::User input
 echo Please Pick an option:
-goto begin2
+goto more
 
-:opt1
+:more1
 echo test opt 1
 ECHO.
 echo Please Wait...
 timeout /t 3
 ECHO.
 PAUSE
-goto begin2
+goto more
 
-:opt2
+:more2
 echo test opt 1
 ECHO.
 echo Please Wait...
 timeout /t 3
 ECHO.
 PAUSE
-goto begin2
+goto more
 
-:opt3
+:more3
 CLS
+goto begin
+
 goto begin
 
 
