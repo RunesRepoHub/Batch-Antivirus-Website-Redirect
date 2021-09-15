@@ -47,15 +47,15 @@ goto begin
 :op3
 CLS
 echo .
-timeout /t 0.5 /nobreak > nul
+timeout /t 1 /nobreak > nul
 echo ..
-timeout /t 0.5 /nobreak > nul
+timeout /t 1 /nobreak > nul
 echo ...
-timeout /t 0.5 /nobreak > nul
+timeout /t 1 /nobreak > nul
 echo ....
-timeout /t 0.5 /nobreak > nul
+timeout /t 1 /nobreak > nul
 echo .....
-timeout /t 0.5 /nobreak > nul
+timeout /t 1 /nobreak > nul
 echo Thank You For Using A Rune Prodution Product
 timeout /t 3 /nobreak > nul
 goto exit
