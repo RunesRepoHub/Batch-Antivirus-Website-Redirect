@@ -29,16 +29,10 @@ PAUSE
 goto begin
 
 :op2
-call "c:\Users\%Username%\Desktop\BAWR-functions\move-reset-hosts-file.bat"
-ECHO.
-echo Please Wait...
-timeout /t 3
 call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3
-call "c:\Users\%Username%\Desktop\BAWR-functions\delete-reset-hosts-file.bat"
-ECHO.
 PAUSE
 goto begin
 
