@@ -56,8 +56,19 @@ echo ....
 timeout /t 1 /nobreak > nul
 echo .....
 timeout /t 1 /nobreak > nul
+ECHO.
 echo Thank You For Using A Rune Prodution Product
-timeout /t 3 /nobreak > nul
+ECHO.
+timeout /t 1 /nobreak > nul
+echo .....
+timeout /t 1 /nobreak > nul
+echo ....
+timeout /t 1 /nobreak > nul
+echo ...
+timeout /t 1 /nobreak > nul
+echo ..
+timeout /t 1 /nobreak > nul
+echo .
 goto exit
 
 :op4
