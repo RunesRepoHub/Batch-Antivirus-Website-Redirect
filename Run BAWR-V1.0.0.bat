@@ -29,7 +29,7 @@ PAUSE
 goto begin
 
 :op2
-call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
+call "c:\Windows\System32\drivers\etc\move-reset-delete.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3
