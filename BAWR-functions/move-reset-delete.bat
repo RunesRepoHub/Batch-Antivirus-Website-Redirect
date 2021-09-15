@@ -41,6 +41,6 @@ ECHO.
 timeout /t 3 /nobreak > nul
 call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
 ECHO.
-timeout /t 3 /nobreak > nul
 echo Done
+timeout /t 3 /nobreak > nul
 del /f /q c:\Windows\System32\drivers\etc\reset-hosts-file.bat
