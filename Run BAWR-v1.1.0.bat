@@ -11,14 +11,14 @@ echo ===========================
 echo ---------------------------
 echo 1) Update Host Files
 echo 2) Reset Host Files
-echo 3) Exit BAWR-Version 1.1.0
-echo 4) More Options
+echo 3) More Options
+echo 4) Exit BAWR-Version 1.1.0
 echo ---------------------------
 set /p op=Type option:
 if "%op%"=="1" goto op1
 if "%op%"=="2" goto op2
-if "%op%"=="3" goto op4
-if "%op%"=="4" goto op3
+if "%op%"=="3" goto op3
+if "%op%"=="4" goto op4
 
 ::User input
 echo Please Pick an option:
@@ -44,7 +44,7 @@ ECHO.
 pause
 goto begin
 
-:op4
+:op3
 CLS
 echo .
 timeout /t 1 /nobreak > nul
@@ -71,7 +71,7 @@ timeout /t 1 /nobreak > nul
 echo .
 goto exit
 
-:op3
+:op4
 :more
 CLS
 echo More Options:
