@@ -17,8 +17,8 @@ echo ---------------------------
 set /p op=Type option:
 if "%op%"=="1" goto op1
 if "%op%"=="2" goto op2
-if "%op%"=="3" goto op3
-if "%op%"=="4" goto op4
+if "%op%"=="3" goto op4
+if "%op%"=="4" goto op3
 
 ::User input
 echo Please Pick an option:
@@ -44,7 +44,7 @@ ECHO.
 pause
 goto begin
 
-:op3
+:op4
 CLS
 echo .
 timeout /t 1 /nobreak > nul
@@ -71,7 +71,7 @@ timeout /t 1 /nobreak > nul
 echo .
 goto exit
 
-:op4
+:op3
 :more
 CLS
 echo More Options:
