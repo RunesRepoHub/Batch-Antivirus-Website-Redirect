@@ -62,7 +62,7 @@ CLS
 echo More Options:
 echo ===========================
 echo ---------------------------
-echo 1) Test 1
+echo 1) Create GodMode Folders
 echo 2) Test 2
 echo 3) Exit BAWR-Version 1.1.0
 ::echo 4) More Options
@@ -80,9 +80,7 @@ goto more
 :more1
 call "c:\Users\%Username%\Desktop\BAWR-functions\make-godmode-folders.bat"
 ECHO.
-echo Please Wait...
-timeout /t 1
-ECHO.
+echo Successfully Created GodMode Folders In The BAWR-Functions Folder On Your Desktop.
 pause
 goto more
 
