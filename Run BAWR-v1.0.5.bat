@@ -1,7 +1,7 @@
 echo off
 
 ::This is the title of the cmd window, the color and the timestamp.
-prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.0.0 && color 2
+prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.0.5 && color 2
 
 :: This is the selecting menu
 :begin
@@ -11,7 +11,7 @@ echo =============
 echo -
 echo 1) Update Host Files
 echo 2) Reset Host Files
-echo 3) Exit BAWR-Version 1.0.0
+echo 3) Exit BAWR-Version 1.0.5
 ::echo 4) Option 4
 echo -
 set /p op=Type option:

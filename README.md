@@ -1,4 +1,4 @@
-# Batch Antivirus Website Redirect (BAWR Version 1.0.0)
+# Batch Antivirus Website Redirect (BAWR Version 1.0.5)
 This is a batch file/files that modifies the localhost file on a Windows PC.
 
 This has been made for blocking company PC from accessing pre-defined URL's.
@@ -7,7 +7,7 @@ At the moment this Version 1.0.0 blocks around 120 url's.
 This is the list as of now.
 
 URL's | URL's | URL's | URL's
------------- | ------------- | ------------ | ------------- 
+------------ | ------------- | ------------ | -------------
 pornhub.com | tv2.dk | facebook.com | twitter.com
 instagram.com | reddit.com | pinterest.com | tiktok.com
 wish.com | tinder.com | match.com | pof.com
