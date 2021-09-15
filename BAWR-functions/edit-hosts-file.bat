@@ -160,8 +160,6 @@ set gobbojr.com.br=127.0.0.1
 set dejavumedspaaz.com=127.0.0.1
 
 
-
-ECHO Carrying out requested modifications to your HOSTS file
 :: remove existing names from hosts file
 
 findstr /v /e "%LIST:~1,-1%" "%filename1%"> tmp.txt

@@ -43,8 +43,6 @@ set LIST=()
 ::Set the ip of the domains you set in the list above
 
 
-
-ECHO Carrying out requested modifications to your HOSTS file
 :: remove existing names from hosts file
 
 findstr /v /e "%LIST:~1,-1%" "%filename1%"> tmp.txt
