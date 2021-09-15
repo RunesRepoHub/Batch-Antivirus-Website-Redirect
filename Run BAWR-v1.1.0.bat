@@ -128,12 +128,14 @@ goto more
 :more3
 call "c:\Users\%Username%\Desktop\BAWR-functions\enable-superuser.bat
 pause
+goto begin
 ::------------------------------
 
 ::------------------------------
 :more4
 call "c:\Users\%Username%\Desktop\BAWR-functions\disable-superuser.bat
 pause
+goto begin
 ::------------------------------
 
 ::------------------------------
