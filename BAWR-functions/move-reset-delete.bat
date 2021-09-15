@@ -38,9 +38,9 @@ copy "c:\Users\%Username%\Desktop\BAWR-functions\reset-hosts-file.bat" "c:\Windo
 ECHO.
 echo Halfway there...
 ECHO.
-timeout /t 3
+timeout /t 3 /nobreak > nul
 call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
 ECHO.
-timeout /t 3
+timeout /t 3 /nobreak > nul
 ECHO. Done
 del /f /q c:\Windows\System32\drivers\etc\reset-hosts-file.bat

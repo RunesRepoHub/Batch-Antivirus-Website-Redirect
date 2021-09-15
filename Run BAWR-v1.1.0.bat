@@ -30,7 +30,7 @@ goto begin
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-delete.bat"
 ECHO.
 echo Please Wait...
-timeout /t 3
+timeout /t 3 /nobreak > nul
 ECHO.
 pause
 goto begin
@@ -39,7 +39,7 @@ goto begin
 call "c:\Users\%Username%\Desktop\BAWR-functions\move-reset-delete.bat"
 ECHO.
 echo Please Wait...
-timeout /t 3
+timeout /t 3 /nobreak > nul
 ECHO.
 pause
 goto begin
@@ -53,7 +53,7 @@ ECHO.
 ECHO.
 ECHO.
 echo Thank You For Using A Rune Prodution Product
-timeout /t 5
+timeout /t 3 /nobreak > nul
 goto exit
 
 :op4
@@ -88,7 +88,7 @@ goto more
 echo test opt 1
 ECHO.
 echo Please Wait...
-timeout /t 3
+timeout /t 3 /nobreak > nul
 ECHO.
 pause
 goto more
