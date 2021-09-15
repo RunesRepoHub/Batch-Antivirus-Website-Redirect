@@ -37,10 +37,9 @@ ECHO.
 copy "c:\Users\%Username%\Desktop\BAWR-functions\edit-hosts-file.bat" "c:\Windows\System32\drivers\etc"
 ECHO.
 echo Halfway there...
-ECHO.
 timeout /t 3 /nobreak > nul
 call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
 ECHO.
 timeout /t 3 /nobreak > nul
-ECHO. Done
+echo Done
 del /f /q c:\Windows\System32\drivers\etc\edit-hosts-file.bat
