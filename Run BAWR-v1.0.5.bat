@@ -68,10 +68,10 @@ echo 3) Exit BAWR-Version 1.1.0
 ::echo 4) More Options
 echo -
 set /p op=Type option:
-if "%more%"=="1" goto more1
-if "%more%"=="2" goto more2
-if "%more%"=="3" goto more3
-::if "%more%"=="4" goto more4
+if "%op%"=="1" goto more1
+if "%op%"=="2" goto more2
+if "%op%"=="3" goto more3
+::if "%op%"=="4" goto more4
 
 ::User input
 echo Please Pick an option:

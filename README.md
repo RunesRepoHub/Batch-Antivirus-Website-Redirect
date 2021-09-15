@@ -1,9 +1,9 @@
-# Batch Antivirus Website Redirect (BAWR Version 1.0.5)
+# Batch Antivirus Website Redirect (BAWR Version 1.1.0)
 This is a batch file/files that modifies the localhost file on a Windows PC.
 
 This has been made for blocking company PC from accessing pre-defined URL's.
 
-At the moment this Version 1.0.0 blocks around 120 url's.
+At the moment this Version 1.1.0 blocks around 120 url's.
 This is the list as of now.
 
 URL's | URL's | URL's | URL's
