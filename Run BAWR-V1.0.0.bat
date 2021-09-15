@@ -31,6 +31,7 @@ call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-delete.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3
+ECHO.
 PAUSE
 goto begin
 
@@ -39,6 +40,7 @@ call "c:\Users\%Username%\Desktop\BAWR-functions\move-reset-delete.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3
+ECHO.
 PAUSE
 goto begin
 
