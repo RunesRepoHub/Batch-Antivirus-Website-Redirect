@@ -28,4 +28,10 @@ if '%errorlevel%' NEQ '0' (
 
 :--------------------------------------
 
-del /f /q c:\Windows\System32\drivers\etc\edit-hosts-file.bat
+copy "c:\Users\%Username%\Desktop\BAWR-functions\reset-hosts-file.bat" "c:\Windows\System32\drivers\etc"
+ECHO.
+timeout /t 3
+call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
+ECHO.
+timeout /t 3
+del /f /q c:\Windows\System32\drivers\etc\reset-hosts-file.bat

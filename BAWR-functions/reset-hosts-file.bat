@@ -36,9 +36,9 @@ setlocal enabledelayedexpansion
 SET "filename1=c:\Windows\System32\drivers\etc\\hosts"
 SET "filename1=hosts"
 ::Create your list of host domains
-set LIST=(bing.com)
+set LIST=()
 ::Set the ip of the domains you set in the list above
-set bing.com=127.0.0.1
+
 
 
 ECHO Carrying out requested modifications to your HOSTS file
