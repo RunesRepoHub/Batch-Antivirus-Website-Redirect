@@ -1,7 +1,10 @@
 @echo off
+
+::This is the title of the cmd window, the color and the timestamp.
 prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.0.0 && color 2
 ECHO.
 
+::This is a script for giving cmd admin rights.
 :: BatchGotAdmin
 :-------------------------------------
 REM  --> Check for permissions
@@ -28,7 +31,7 @@ if '%errorlevel%' NEQ '0' (
 
 :--------------------------------------
 
-
+::This is the background script to change values in the host file itself.
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 :ACCEPTED
