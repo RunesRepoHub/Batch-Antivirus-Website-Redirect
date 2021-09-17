@@ -6,7 +6,6 @@ prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.1.0 && color 2
 :: This is the selecting menu
 :begin
 CLS
-set "%op%"=="0"
 echo Select a task:
 echo ===========================
 echo ---------------------------
@@ -16,6 +15,7 @@ echo 3) More Options
 echo 4) Exit BAWR-Version 1.1.0
 echo ---------------------------
 set /p op=Type option:
+set "%op%"=="0"
 if "%op%"=="1" goto op1
 if "%op%"=="2" goto op2
 if "%op%"=="3" goto op3
