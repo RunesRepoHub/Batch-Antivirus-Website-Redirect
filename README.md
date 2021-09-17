@@ -1,12 +1,14 @@
 # Batch Antivirus Website Redirect (BAWR Version 1.1.0)
 This is a batch file/files that modifies the localhost file on a Windows PC.
 
+:warning: If you want to use this PLEASE: Download a release instead of the latest Update to the main branch.
+
 And it now also able to make GodMode Folders in its own folders, And enable/disable
 Windows "Super Admin User".
 
 This program aims to make troubleshooting easy for it-supports.
 
-#### THIS PROGRAM SHOULD NOT BE USED BY END USERS.... 
+#### THIS PROGRAM SHOULD NOT BE USED BY END USERS....
 
 This has been made for blocking company PC from accessing pre-defined URL's.
 
