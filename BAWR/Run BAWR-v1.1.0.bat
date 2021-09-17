@@ -6,6 +6,7 @@ prompt $T $B $P$G && title Rune Prodution's BAWR Version 1.1.0 && color 2
 :: This is the selecting menu
 :begin
 CLS
+set "%op%"=="0"
 echo Select a task:
 echo ===========================
 echo ---------------------------
