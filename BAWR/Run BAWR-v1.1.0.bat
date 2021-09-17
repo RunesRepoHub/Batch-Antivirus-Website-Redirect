@@ -15,7 +15,7 @@ echo 3) More Options
 echo 4) Exit BAWR-Version 1.1.0
 echo ---------------------------
 set /p op=Type option:
-set "%op%"=="0"
+if "%op%"=="" goto begin
 if "%op%"=="1" goto op1
 if "%op%"=="2" goto op2
 if "%op%"=="3" goto op3
