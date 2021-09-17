@@ -1,4 +1,4 @@
-# :ant: Batch Antivirus Website Redirect (BAWR Version 1.1.0) :ant:
+# :ant: Batch Antivirus Website Redirect (BAWR Version 1.1.0)
 This is a batch file/files that modifies the localhost file on a Windows PC.
 
 :warning: If you want to use this PLEASE: Download a release instead of the latest Update to the main branch. :warning:
