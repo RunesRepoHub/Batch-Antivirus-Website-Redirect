@@ -28,7 +28,7 @@ goto begin
 ::This section is to configured the options
 ::------------------------------
 :op1
-call "c:\Users\%Username%\Desktop\BAWR-functions\move-edit-delete.bat"
+call "c:\Users\%Username%\Desktop\BAWR\BAWR-functions\move-edit-delete.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3 /nobreak > nul
@@ -39,7 +39,7 @@ goto begin
 
 ::------------------------------
 :op2
-call "c:\Users\%Username%\Desktop\BAWR-functions\move-reset-delete.bat"
+call "c:\Users\%Username%\Desktop\BAWR\BAWR-functions\move-reset-delete.bat"
 ECHO.
 echo Please Wait...
 timeout /t 3 /nobreak > nul
@@ -106,7 +106,7 @@ goto more
 
 ::------------------------------
 :more1
-call "c:\Users\%Username%\Desktop\BAWR-functions\make-godmode-folders.bat"
+call "c:\Users\%Username%\Desktop\BAWR\BAWR-functions\make-godmode-folders.bat"
 ECHO.
 echo Successfully Created GodMode Folders In The BAWR-Functions Folder On Your Desktop.
 pause
@@ -126,14 +126,14 @@ goto more
 
 ::------------------------------
 :more3
-call "c:\Users\%Username%\Desktop\BAWR-functions\enable-superuser.bat
+call "c:\Users\%Username%\Desktop\BAWR\BAWR-functions\enable-superuser.bat
 pause
 goto begin
 ::------------------------------
 
 ::------------------------------
 :more4
-call "c:\Users\%Username%\Desktop\BAWR-functions\disable-superuser.bat
+call "c:\Users\%Username%\Desktop\BAWR\BAWR-functions\disable-superuser.bat
 pause
 goto begin
 ::------------------------------

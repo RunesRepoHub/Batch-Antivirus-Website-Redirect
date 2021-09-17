@@ -34,13 +34,12 @@ if '%errorlevel%' NEQ '0' (
 ::This is the script being run when you select "Update Host Files" to move, run and delete the files needed.
 echo Working on it...
 ECHO.
-copy "c:\Users\%Username%\Desktop\BAWR-functions\reset-hosts-file.bat" "c:\Windows\System32\drivers\etc"
+copy "c:\Users\%Username%\Desktop\BAWR\BAWR-functions\edit-hosts-file.bat" "c:\Windows\System32\drivers\etc"
 ECHO.
 echo Halfway there...
-ECHO.
 timeout /t 3 /nobreak > nul
-call "c:\Windows\System32\drivers\etc\reset-hosts-file.bat"
+call "c:\Windows\System32\drivers\etc\edit-hosts-file.bat"
 ECHO.
 echo Done
 timeout /t 3 /nobreak > nul
-del /f /q c:\Windows\System32\drivers\etc\reset-hosts-file.bat
+del /f /q c:\Windows\System32\drivers\etc\edit-hosts-file.bat
